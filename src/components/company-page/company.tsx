@@ -89,7 +89,7 @@ const Company: React.FC = () => {
                   )}
                 />
                 {errors[field.name] && (
-                  <span className="text-red-800">
+                  <span className="text-red-800 text-[12px]">
                     {errors[field.name]?.message}
                   </span>
                 )}
@@ -170,7 +170,7 @@ const Company: React.FC = () => {
                   </label>
                 )}
                 {errors[field.name] && (
-                  <span className="text-red-800">
+                  <span className="text-red-800 text-[12px]">
                     {errors[field.name]?.message}
                   </span>
                 )}
@@ -207,11 +207,11 @@ const Company: React.FC = () => {
                       control={control}
                       rules={field.rules}
                       render={({ field }: any) => (
-                        <Input type={field.type} {...field} />
+                        <Input placeholder={field.placeholder} type={field.type} {...field} />
                       )}
                     />
                     {errors[field.name] && (
-                      <span className="text-red-800">
+                      <span className="text-red-800 text-[12px]">
                         {errors[field.name]?.message}
                       </span>
                     )}

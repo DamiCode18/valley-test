@@ -80,11 +80,11 @@ const Company: React.FC = () => {
                   name={field.name}
                   control={control}
                   rules={field.rules}
-                  render={({ field }: any) => (
+                  render={({ field: controllerField }: any) => (
                     <Input
                       placeholder={field.placeholder}
                       type={field.type}
-                      {...field}
+                      {...controllerField}
                     />
                   )}
                 />
@@ -155,8 +155,8 @@ const Company: React.FC = () => {
                       name={field.name}
                       control={control}
                       rules={field.rules}
-                      render={({ field }: any) => (
-                        <Input placeholder={field.placeholder} type={field.type} {...field} className="mb-6" />
+                      render={({ field: controllerField }: any) => (
+                        <Input placeholder={field.placeholder} type={field.type} {...controllerField} className="mb-6" />
                       )}
                     />
                   </div>
@@ -206,8 +206,8 @@ const Company: React.FC = () => {
                       name={field.name}
                       control={control}
                       rules={field.rules}
-                      render={({ field }: any) => (
-                        <Input placeholder={field.placeholder} type={field.type} {...field} />
+                      render={({ field: controllerField }: any) => (
+                        <Input placeholder={field.placeholder} type={field.type} {...controllerField} />
                       )}
                     />
                     {errors[field.name] && (

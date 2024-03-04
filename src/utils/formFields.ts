@@ -1,4 +1,4 @@
-export type FormField = {
+type FormField = {
   name: string;
   label: string;
   placeholder?: string;

@@ -70,7 +70,7 @@ const Company: React.FC = () => {
       </div>
       <Form {...form}>
         <form>
-          <div className="grid md:grid-cols-2 gap-10">
+          <div className="grid md:grid-cols-2 gap-6">
             {formFields.slice(0, 4).map((field, index) => (
               <div key={index}>
                 <label htmlFor={field.name} className="text-[#17171FCC]">
@@ -97,13 +97,13 @@ const Company: React.FC = () => {
             ))}
           </div>
 
-          <div className=" mt-5">
+          <div className="mt-6">
             {formFields.slice(4, 8).map((field, index) => (
               <div key={index} className="grid">
                 {field.name === "employee_count" ? (
-                  <div className="my-4">
+                  <div className="mb-6 mt-4">
                     <label
-                      className="-mt-6 mb-5 block text-[#17171FCC]"
+                      className="-mt-6 mb-2 block text-[#17171FCC]"
                       htmlFor={field.name}
                     >
                       {field.label}
@@ -170,7 +170,7 @@ const Company: React.FC = () => {
                   </label>
                 )}
                 {errors[field.name] && (
-                  <span className="text-red-800 text-[12px]">
+                  <span className="text-red-800 text-[12px] mb-5 -mt-5">
                     {errors[field.name]?.message}
                   </span>
                 )}

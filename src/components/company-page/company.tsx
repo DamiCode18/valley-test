@@ -90,7 +90,7 @@ const Company: React.FC = () => {
                 />
                 {errors[field.name] && (
                   <span className="text-red-800">
-                    {errors[field.name].message}
+                    {errors[field.name]?.message}
                   </span>
                 )}
               </div>
@@ -171,7 +171,7 @@ const Company: React.FC = () => {
                 )}
                 {errors[field.name] && (
                   <span className="text-red-800">
-                    {errors[field.name].message}
+                    {errors[field.name]?.message}
                   </span>
                 )}
               </div>
@@ -212,7 +212,7 @@ const Company: React.FC = () => {
                     />
                     {errors[field.name] && (
                       <span className="text-red-800">
-                        {errors[field.name].message}
+                        {errors[field.name]?.message}
                       </span>
                     )}
                   </div>

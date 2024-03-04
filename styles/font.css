@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'ppneuemontreal-thin.otf';
+  font-weight: 100;
+  src: ('/public/fonts/ppneuemontreal-thin.otf')
+}
+@font-face {
+  font-family: 'ppneuemontreal-regular.otf';
+  font-weight: 400;
+  src: ('/public/fonts/ppneuemontreal-regular.otf')
+
+}
+@font-face {
+  font-family: 'ppneuemontreal-medium.otf';
+  font-weight: 500;
+  src: ('/public/fonts/ppneuemontreal-medium.otf')
+
+}
+@font-face {
+  font-family: 'ppneuemontreal-semibold';
+  font-weight: 600;
+  src: ('/public/fonts/ppneuemontreal-semibold.otf')
+
+}
+@font-face {
+  font-family: 'ppneuemontreal-bold';
+  font-weight: 700;
+  src: ('/public/fonts/ppneuemontreal-bold.otf')
+
+}
+@font-face {
+  font-family: 'ppneuemontreal-bold';
+  font-weight: 800;
+  src: ('/public/fonts/ppneuemontreal-bold.otf')
+
+}
